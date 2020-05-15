@@ -1,0 +1,30 @@
+package com.usermanagement.controller;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.usermanagement.Model.User;
+import com.usermanagement.service.UserService;
+
+public class UserController {
+
+	private UserService userService;
+	
+	@GetMapping("/users")
+	public List<User>getAllUsers() {
+		return userService.getAllUsers();
+	}
+	
+	@GetMapping("/user/{id}")
+	public User getUserById(@PathVariable(value="id") String id) {
+		return userService.getUser(id);
+	}
+	
+	public ResponseEntity<Object> addUser(@RequestBody User user){
+		userService.addUser(user);
+	}
+}

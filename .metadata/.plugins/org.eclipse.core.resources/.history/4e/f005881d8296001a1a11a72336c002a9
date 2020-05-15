@@ -1,0 +1,40 @@
+package com.usermanagement.serviceimplementation;
+
+import java.util.List;
+
+import com.usermanagement.Model.User;
+import com.usermanagement.service.UserService;
+
+public class UserServiceImp implements UserService {
+
+	@Override
+	public List<User> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User getUser(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addUser(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public User updateUser(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User deleteUser(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

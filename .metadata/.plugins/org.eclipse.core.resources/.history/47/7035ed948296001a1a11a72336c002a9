@@ -1,0 +1,16 @@
+package com.usermanagement.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.usermanagement.Model.User;
+
+public class UserRepository {
+
+	List<User> userList = new ArrayList<User>();
+	public List<User> getAllUsers() {
+		// TODO Auto-generated method stub
+		return userList;
+	}
+
+}

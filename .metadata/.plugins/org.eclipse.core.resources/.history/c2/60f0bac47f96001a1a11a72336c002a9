@@ -1,0 +1,15 @@
+package com.usermanagement.controller;
+
+import java.util.List;
+
+import com.usermanagement.Model.User;
+import com.usermanagement.service.UserService;
+
+public class UserController {
+
+	private UserService userService;
+	
+	public List<User>getAllUsers() {
+		userService.getAllUserd();
+	}
+}

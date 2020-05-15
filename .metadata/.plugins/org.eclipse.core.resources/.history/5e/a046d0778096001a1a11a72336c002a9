@@ -1,0 +1,24 @@
+package com.usermanagement.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.usermanagement.Model.User;
+import com.usermanagement.service.UserService;
+
+public class UserController {
+
+	private UserService userService;
+	
+	@GetMapping("/users")
+	public List<User>getAllUsers() {
+		return userService.getAllUsers();
+	}
+	
+	@GetMapping("/user/{id}")
+	public User getUserById(@PathVariable(value="id") String id) {
+		return userService.getUser(id);
+	}
+}

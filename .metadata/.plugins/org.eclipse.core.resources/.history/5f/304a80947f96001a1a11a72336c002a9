@@ -1,0 +1,8 @@
+package com.usermanagement.controller;
+
+import com.usermanagement.service.UserService;
+
+public class UserController {
+
+	private UserService userService;
+}

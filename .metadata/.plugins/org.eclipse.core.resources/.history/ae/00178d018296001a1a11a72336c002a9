@@ -1,0 +1,7 @@
+package com.usermanagement.serviceimplementation;
+
+import com.usermanagement.service.UserService;
+
+public class UserServiceImp implements UserService {
+
+}
